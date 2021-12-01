@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+
+{% block content %}
+<div class="top_wave">
+<img src="{{ url_for("static", filename="pacifictop_thin.png", id='wave') }}">
+</div>
+
+<h1>Pacific</h1>
+<h2>A Peaceful Place <span>to Redirect your Urge to Surf</span></h2>
+  <h3>Furry Healers</h3>
+  <h4> Cats purr with a frequency of between 25 and 150 Hertz. 
+    Research has shown that such frequencies can promote healing, reduce inflamation, help with breathing, and improve bone density. </h4><h4>According to Orthopedica This Week "Is There Healing Power in a Cat's Purr?""
+    Biloine W. Young, June 22ND, 2018, "the purring of a cat lowers stress — petting a purring cat has a calming effect. It decreases the symptoms of dyspnoea (difficulty in breathing) in cats and humans. It also lowers blood pressure and reduces the risk of heart disease. Cat owners have 40% less risk of having a heart attack.
+    The healing power of cat purrs is believed to help with infections, swelling and pain, muscle growth and repair, tendon repair and joint mobility".</h4>
+   .</h2>
+
+   <h3>Here's a random cat fact: </h3>
+    <h4>
+    {{data1}}
+    </h4>    
+ 
+<img src="{{cat_picture}}"style="width:600px; overflow:hidden;">
+ 
+<p>
+    
+  <h3>Refresh the Page for a New Cat Picture and Cat Fact</h3>
+  <button onclick="location.reload();">More Cats!</button>
+  
+   </p>
+   {% endblock %}
